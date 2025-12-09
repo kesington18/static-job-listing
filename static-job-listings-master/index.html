@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Job Listings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body class="bg-[#effafaff] overflow-x-hidden w-screen text-[15px]">
+  <div class="main-card relative">
+    <nav class="bg-[url('/images/bg-header-mobile.svg')] h-[10rem] w-[100vw] bg-cover bg-no-repeat bg-center bg-[#5ba4a4ff]"></nav>
+
+    <!-- <header class="grid grid-cols-[3fr_1fr] p-4 bg-white w-[90%] rounded-lg mx-6 z-40 fixed top-28 shadow-lg">
+      <div class="search-elements flex flex-wrap  gap-4">
+      </div>
+      <div class="clear text-[#7b8e8eff] font-bold flex items-center justify-end">Clear</div>
+    </header> -->
+
+    <main class="mt-[4rem] mb-[7rem] flex flex-col gap-10">
+      <div class="job-card bg-[linear-gradient(to_right,#5ba4a4ff_7px,#fff_7px)] rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/photosnap.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff] w-full mb-3">
+          Photosnap
+          <span class="new-job rounded-2xl bg-[#5ba4a4ff] text-white font-bold py-1 px-3 ml-4 mr-2 text-center">New!</span>
+          <span class="featured-job rounded-3xl bg-[#2c3a3aff] text-white font-bold py-1 px-2.5 text-center">Featured</span>
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Senior Frontend Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">1d ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">USA only</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Senior</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">HTML</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">CSS</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-[linear-gradient(to_right,#5ba4a4ff_7px,#fff_7px)] rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/manage.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          Manage
+          <span class="new-job rounded-2xl bg-[#5ba4a4ff] text-white font-bold py-1 px-3 ml-4 mr-2 text-center">New!</span>
+          <span class="featured-job rounded-3xl bg-[#2c3a3aff] text-white font-bold py-1 px-2.5 text-center">Featured</span>
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Fullstack Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">1d ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Part Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">Remote</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Fullstack</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Midweight</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Python</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">React</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/account.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          account
+          <span class="new-job rounded-2xl bg-[#5ba4a4ff] text-white font-bold py-1 px-3 ml-4 mr-2 text-center">New!</span>
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Junior Frontend Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">2d ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Part Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">USA only</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">React</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Sass</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/myhome.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          MyHome
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Junior Frontend Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">5d ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Contract</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">USA only</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">CSS</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/loop-studios.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          Loop Studios
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Software Engineer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">1w ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">Worldwide</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Fullstack</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Midweight</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Sass</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Ruby</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/faceit.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          FaceIt
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Junior Backend Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">2w ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">UK only</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Backend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Ruby</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">RoR</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/shortly.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          Shortly
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Junior Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">2w ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">Worldwide</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">HTML</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Sass</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/insure.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          Insure
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Junior Frontend Developer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">2w ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">USA only</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Vue</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Sass</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/eyecam-co.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          Eyecam Co.
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Full Stack Engineer
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">3w ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">Full Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">Worldwide</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Fullstack</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Midweight</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Django</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Python</span>
+        </div>
+      </div>
+
+      <div class="job-card bg-white rounded-lg shadow-lg flex flex-col p-6 mx-6 relative">
+        <img src="./images/the-air-filter-company.svg" class="w-12 h-12 absolute -top-6" alt="Company logo">
+        <div class="job-company font-bold text-[#5ba4a4ff]  w-full mb-3">
+          The Air Filter Company
+        </div>
+        <div class="job-position text-[#2c3a3aff] font-bold mb-3">
+          Front-end Dev
+        </div>
+        <div class="job-details flex items-center justify-start gap-4 mb-4">
+          <span class="posted-time font-bold text-[#7b8e8eff]">1mo ago</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-type font-bold text-[#7b8e8eff]">part Time</span>
+          <i class="fa fa-circle text-[0.3rem] text-[#7b8e8eff]" aria-hidden="true"></i>
+          <span class="job-location font-bold text-[#7b8e8eff]">Worldwide</span>
+        </div>
+        <div class="job-tags flex items-center gap-4 border-t-2 border-blue-[#7b8e8eff] pt-4 mt-auto flex-wrap">
+          <span class="role-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Frontend</span>
+          <span class="level-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Junior</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">React</span>
+          <span class="tool-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">Sass</span>
+          <span class="language-tag p-2 font-bold text-[#5ba4a4ff] bg-[#effafaff] cursor-pointer">JavaScript</span>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
